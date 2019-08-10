@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>California Distilate Co.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+      integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+      crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+      integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+      crossorigin='anonymous'>
+
+  </head>
+
+  <body>
+    <nav>
+      <div class="top"> <h1 style="color:white">California Distilate Co.</h1>
+      </div>
+      <ul>
+	      <li><a href="#social-media">Social Media</li>
+        <li><a href="#about-us">About Us</li>
+        <li><a href="#contact-us">Contact Us</li>
+      </ul>
+      <button class="log-in" onclick="openForm()">
+        <a  class="tooltip-left" data-tooltip="Sign in">
+        <i class="fas fa-address-card" style= 'font-size: 50px; color: #1a1a1a; float: right;' ></i>
+      </a>
+    </button>
+    <div class="form-popup" id="myForm">
+<form action="/action_page.php" class="form-container">
+  <h1>Login</h1>
+
+  <label for="Username"><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" name="Username" required>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <button type="submit" class="btn">Login</button>
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<script>
+function openForm() {
+document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+document.getElementById("myForm").style.display = "none";
+}
+</script>
+    </nav>
+  </body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/test.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/test1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/test2.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 10 seconds
+}
+</script>
+
+<h1 id="social-media" class="insta-info">Want To See More? Come Visit Us On Our Social Media</h1>
+<div class= "background1">
+  <div class="insta-icon">
+  <a href="insta-link"><i class='fab fa-instagram'></i></a>
+</div>
+</div>
+
+
+<div class= "background2">
+
+    <div class="dot2" >
+    </div>
+
+  <h1 id="about-us" class="about" style="text-align:left">Why Call Callifornia Distilate Co</h1>
+  <p class="about-info">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+     Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+      amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit
+      amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,
+      ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+      sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent
+      dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+      Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <div class="about-break">
+    </div>
+      <div class="about-tree">
+          <img src="http://chittagongit.com/images/tourist-icon-png/tourist-icon-png-0.jpg" width="500">
+        </div>
+</div>
+
+<footer>
+  <h1 id="contact-us" class="contact" style="text-align:left">Got Questions? We Got Answers</h1>
+  <p class="contact-info">Location:<br><br>Phone Number:<br><br>Email:</p>
+  <p class="contact-info1"><a href="map" style='color:white'>SoCal Labs LLC. 68739 Summit Dr, </a><a href="img/kitty.jpg" target="blank" style="color:white">Cat</a><a href="map" style='color:white'>hedral City, CA 92234</a><br><br>
+    <a ref="phone" style='color:white'><a href="number" style='color:white'>954.232.6613</a><br><br>
+    <a href="email" style='color:white'>email</a>
+
+</footer>
+</html>

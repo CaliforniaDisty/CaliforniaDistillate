@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.top{
+  width:auto;
+  height: 30px;
+  font-size: 30px;
+  font-family: arial;
+  text-align: center;
+  padding: 5px 0;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #1a1a1a;
+}
+
+ul {
+  padding: 30px 0 0 0;
+
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 0 0 0;
+  float: left;
+  height: 30px;
+  position: relative;
+  margin: 10px 0;
+}
+
+ul li:hover{
+  background-color: black;
+}
+
+ul li a{
+  display: block;
+  font-size: 15px;
+  font-family:arial;
+  color: white;
+  padding: 0 25px;
+}
+
+.log-in{
+  float: right;
+  margin: 0 0;
+  position: relative;
+  top: -10px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+ .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.background1{
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+.insta-icon{
+  float:right;
+  font-size: 400px;
+  padding: 25px 100px;
+}
+
+.insta-info{
+  float:left;
+  font-size:50px;
+  color: black;
+  text-align: center;
+  width: 700px;
+  line-height: 80px;
+  margin: 180px 0 100px 0;
+}
+
+.background2{
+  width: 100%;
+  height: 800px;
+  background-color: #1D2E56;
+}
+
+
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.dot2 {
+  height: 500px;
+  width: 500px;
+  margin: 0px 10px 0px 0;
+  float: right;
+  background-color: #F0A207;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation-name: dot2;
+  -webkit-animation-duration:10s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dot2{
+  from {background-color: yellow; top: 0px;}
+  to {background-color: #F0A207; top: 250px}
+}
+
+@keyframes dot2{
+  from {background-color: yellow; top: 0px;}
+  to {background-color: #F0A207; top: 250px}
+}
+
+.about-tree{
+right: 10px;
+position: absolute;
+
+}
+
+.about{
+  color: white;
+  font-family: arial;
+  font-size: 50px;
+  padding: 80px 30px 20px;
+  float: left;
+  position: relative;
+}
+
+.about-info{
+  color: white;
+  font-family: arial;
+  font-size: 25px;
+  padding: 100px 60px 0;
+  float: left;
+  position: relative;
+  width: 820px;
+}
+
+.about-break{
+  width: 100%;
+  bottom: 0;
+  height: 225px
+}
+.contact{
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  padding: 10px 55px 0;
+  float: left;
+  position: relative;
+  width: 500px;
+}
+
+.contact-info{
+  color: white;
+  font-family: arial;
+  font-size: 15px;
+  padding: 35px 0 0;
+  float: left;
+  position: relative;
+  width: 150px;
+}
+
+.contact-info1{
+  color: white;
+  font-family: arial;
+  font-size: 15px;
+  padding: 35px 0 0;
+  float: left;
+  position: relative;
+  width: 425px;
+}
+a .contact-info1:link{
+  color:white;
+}
+/**
+ * Tooltip Styles
+ */
+
+/* Base styles for the element that has a tooltip */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+
+}
+
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition:
+      opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition:
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition:
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Base styles for the tooltip's directional arrow */
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+/* Base styles for the tooltip's content area */
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 160px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Directions */
+
+/* Left */
+.tooltip-left:before,
+.tooltip-left:after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+}
+
+.tooltip-left:before {
+  margin-left: 0;
+  margin-right: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-left-color: #000;
+  border-left-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-left:hover:before,
+.tooltip-left:hover:after,
+.tooltip-left:focus:before,
+.tooltip-left:focus:after {
+  -webkit-transform: translateX(-12px);
+  -moz-transform:    translateX(-12px);
+  transform:         translateX(-12px);
+}
+
+
+/* Move directional arrows down a bit for left tooltips */
+.tooltip-left:before {
+  top: 3px;
+}
+
+/* Vertically center tooltip content for left tooltips */
+.tooltip-left:after {
+  margin-left: 0;
+  margin-bottom: -36px;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  top:-14px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 1346px) {
+  .about-info{
+    font-size: 20px;
+    padding: 50px 40px 0;
+    width: 500px;
+
+  }
+  .about{
+    font-size: 40px;
+    padding: 80px 0px 20px 30px;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 1266px) {
+  .insta-icon{
+    font-size: 300px;
+    padding: 100px 100px 0 100px;
+  }
+
+  .insta-info{
+    font-size:40px;
+    text-align: center;
+    width: 600px;
+    line-height: 80px;
+    margin: 180px 0 100px 0;
+  }
+}
+
+@media only screen and (max-width: 1163px) {
+  .about{
+    font-size: 27px;
+    width: 400px;
+  }
+  .about-info{
+    font-size: 20px;
+    padding: 50px 40px 0;
+    width: 400px;
+  }
+  .contact-info{;
+    top: 35px;
+    left: -350px;
+  }
+
+  .contact-info1{
+    top: 35px;
+    left: -350px;
+    width: 411px;
+  }
+}
+
+@media only screen and (max-width: 1079px) {
+  .insta-info{
+    font-size:30px;
+    text-align: center;
+    width: 300px;
+    line-height: 80px;
+    padding-left: 20px;
+  }
+  .contact-info{;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+  }
+  .contact-info1{
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    font-size: 15px;
+  }
+  .contact{
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 926px) {
+  .dot2 {
+    height: 300px;
+    width: 300px;
+    margin: 0px 10px 0px 0;
+  }
+  .about-tree{
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .about{
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+  }
+  .about-info{
+    text-align: center;
+    width: 100%;
+  }
+  .dot2 {
+    display: none;
+  }
+  .insta-info{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top{
+    font-size: 20px;
+  }
+
+  ul li a{
+    display: block;
+    font-size: 10px;
+    font-family:arial;
+    color: white;
+    padding: 0 20px;
+  }
+  .contact-info{;
+  display: none;
+  }
+  .contact-info1{
+  text-align: center;
+  }
+}
