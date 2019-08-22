@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-
-<div class="bg-image">
   <ul>
     <li><a href="#team">The Team</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <img src="img/logo2.png" style="position: relative; width:80%; height: 80%; left: 10%; top:0px; z-index: 2;">
+<div class="bg-image">
 
-<img src="img/logo2.png" style="position: absolute; width:80%; height: 1100px; left: 10%; top:-90px;">
 
+<img src="img/logo2.png" style="position: absolute; width:80%; height: 30%; left: 10%; top:-4%; z-index: 2;">
+</div>
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -116,10 +117,10 @@
     </div>
     </div>
 
-    <div class="wrapper" style="height:700px; top:800px; position:relative; width:100%;">
+    <div class="wrapper" >
       <p id="team" style="top:-46px; position: absolute;"/>
       <p class="meet">MEET THE CREW</p>
-      <div class="column1" style="top:300px;">
+      <div class="column1" >
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav()">
       <img src="img/icon.jpg" style="height: 150px; width: 150px; object-fit:cover;"></span>
       <div class="container" style="top:190px; color:white;">
@@ -127,15 +128,15 @@
             </div>
         </div>
 
-        <div class="column1" style="left:27%; top:300px;">
+        <div class="column1">
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav1()">
-      <img src="img/icon.png" style="border-radius:50%; height: 150px; width:150px;"></span>
+      <img src="img/icon.png" style="border-radius:50%; height: 150px; width:150px; "></span>
       <div class="container" style="top:190px; color:white;">
               <h2>Timmy Thompson CEO</h2>
           </div>
         </div>
 
-        <div class="column1" style="left:39%; top:300px;">
+        <div class="column1" >
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav2()">
       <img src="img/icon2.png" style="border-radius:50%; height: 150px; width: 150px;"></span>
       <div class="container" style="top:190px; color:white;">
@@ -143,7 +144,7 @@
           </div>
         </div>
 
-        <div class="column1" style="left:51%; top:300px;">
+        <div class="column1" >
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav3()">
       <img src="img/icon3.png" style="border-radius:50%; height: 150px; width: 150px;"></span>
       <div class="container" style="top:190px; color:white;">
@@ -151,14 +152,14 @@
           </div>
         </div>
 
-        <div class="column1" style="left:63%; top:300px;">
+        <div class="column1" >
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav4()">
       <img src="img/icon4.png" style="border-radius:50%; height: 150px; width: 150px;"></span>
       <div class="container" style="top:190px; color:white;">
               <h2>Dave Williamson, CMO</h2>
           </div>
         </div>
-        <div class="column1" style="left:75%; top:300px;">
+        <div class="column1" >
     <span style="font-size:30px;cursor:pointer; padding: 2%;" onclick="openNav5()">
       <img src="img/icon5.png" style="border-radius:50%; height: 150px; width: 150px; display: cover;"></span>
       <div class="container" style="top:190px; color:white;">
@@ -217,13 +218,15 @@
       document.getElementById("myNav5").style.width = "0%";
     }
     </script>
+</div>
 
+<div class=bg-image2>
     <div  class="info">
       <p id="about" style="top:-46px; position: absolute;"/>
       <p align= "center" style="font-size:40px; font-family: georgia; padding:0 0 10px 0;">About Us</p>
         <hr align= "center" size="5" color="black" width= "35%" style="position: absolute; left:32%; ">
     <p align= center style="padding: 30px 20px; font-size: 17px; "> California Distillate Company opened the doors to its facility in Cathedral City under
-      SoCal Labs in April 2018. Founder, Alex Matzkin and his team went to work collaborating with cannabis
+      SoCal Labs in April 2018. The team went to work collaborating with cannabis
       experts from the west coast to create one of the industries largest wholesale manufacturing companies.
       SoCal Labs offers a variety of core competencies in the cannabis space such as, wholesale distillate,
        crude, and toll processing.  With one of the largest capacities in California, SoCal labs has been a
@@ -242,10 +245,10 @@
         <div class="column">
 
 
-          <form method="POST" action="contact.php" name="contact_form">
+          <form method="post" action="contact.php" name="contact_form">
 
             <input type="text"  name="name" required placeholder="Your name..">
-            <input type="text"  name="number" placeholder="(xxx)xxx-xxxx..">
+            <input type="text"  name="telephone" placeholder="(xxx)xxx-xxxx..">
             <input type="text"  name="email" placeholder="Your email address..">
             <textarea  name="subject" placeholder="Message..." style="height:120px"></textarea>
             <input type="submit" name="Submit"  value="Send" />
