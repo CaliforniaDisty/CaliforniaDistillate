@@ -16,7 +16,7 @@ html {
   height: 700px;
   width: 100%;
   position: absolute;
-  min-width: 1370px;
+  min-width: 1500px;
   z-index: 3;
 }
 
@@ -31,11 +31,11 @@ ul {
   position: fixed;
   top: 0%;
   z-index: 4;
-
 }
 
 li {
   float: left;
+
 }
 
 li a {
@@ -58,7 +58,7 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
  min-height:100%;
-    min-width:1370px;
+    min-width:1500px;;
     height:auto;
     width:auto;
     position:absolute;
@@ -73,7 +73,7 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-width:1370px;
+  min-width:1500px;
   height: 2500px;
   top: 0;
   position: relative;
@@ -130,22 +130,29 @@ li a:hover {
     font-size: 80%;
   }
   .bg-image2 {
-
     top: 250px;
-
   }
 }
 
 @media screen and (max-width: 850px) {
-
   .bg-image2 {
-
     top: 500px;
-
   }
 }
 
 @media screen and (max-width: 650px) {
+  ul {
+    height: 70px;
+  }
+
+  li a {
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 70px;
+  }
+
   .column1 {
     height: 150px;
     left:1%;
@@ -154,10 +161,19 @@ li a:hover {
   .wrapper {
     height: 1000px;
   }
+
+  .bg-image {
+    height: 1000px;
+      top:0;
+       bottom:0;
+      left:0%;
+       right:0%;
+       width: 150%;
+  }
+
   .bg-image2 {
-
-    top: 1000px;
-
+    top: 800px;
+    position: relative;
   }
 }
 
@@ -166,7 +182,6 @@ li a:hover {
     width: 100%;
     display: block;
   }
-
 }
 
 
